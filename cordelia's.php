@@ -1,110 +1,325 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cordelia's</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordelia's Cafe</title>
     <link rel="stylesheet" href="style.css" media="all"/>
     <style>
-        /* Your existing styles here */
+        button {
+            color: #d24eef;
+            float: center;
+            width: 30%;
+            padding: 10px;
+            font-size: 25px;
+        }
+        h2 {
+            color: black;
+        }
+        .column {
+            float: left;
+            width: 20%;
+            padding: 15px;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        a:link {
+            color: white;
+        }
+        a:visited {
+            color: #ae73bb;
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+            color: #d24eef;
+        }
+        .upper-roman {
+            list-style-type: upper-roman;
+        }
+        ol {
+            list-style-position: inside;
+        }
+        ul {
+            list-style: none; 
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .icon {
+            width: 20px; 
+            height: 20px; 
+            margin-right: 8px;
+            vertical-align: middle; 
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: #F0F0F0;
+        }
+        .bottom-right {
+            position: absolute;
+            top: 20px;
+            bottom: 8px;
+            right: 16px;
+            left: 110px;
+            width: 80%;
+            background: rgba(150, 15, 19, 0.3);
+            text-align: center;
+        }
+        .google-map {
+            padding-bottom: 50%;
+            position: relative;
+        }
+        .google-map iframe {
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
 </head>
 <body background="background2.png" style="background-size: cover; background-repeat: no-repeat; width:100%;">
-<marquee>the home of freshly baked desserts and chocolates made from handpicked ingredients</marquee>
+    <marquee>The home of freshly baked desserts and chocolates made from handpicked ingredients</marquee>
+    <div style="background-color:#fad6ed; width:100%; height:8%; float:left;">
+        <table align="center" width="90%">
+            <tr>
+                <td rowspan=4></td>
+            </tr>
+            <tr>
+                <td style="font-size: 28px; font-family:aldhabi;" align="left">
+                    <a href="cordelia's.html"><b>Home</b></a>
+                </td>
+                <td align="center" style="font-size: 28px; font-family:aldhabi;">
+                    <a href="chocolates.html"><b>Chocolates</b></a>
+                </td> 
+                <td align="center" style="font-size: 28px; font-family:aldhabi;">
+                    <a href="signature cakes.html"><b>Cakes</b></a>
+                </td> 
+                <td align="center" style="font-size: 28px; font-family:aldhabi;">
+                    <a href="hampers.html"><b>Hampers</b></a>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-<div style="background-color:#fad6ed; width:100%; height:8%; float:left;">
-    <table align="center" width="90%">
+    <div>
+        <center>
+            <h1 style="font-family:Bahnschrift SemiBold"><b><font size="15">CORDELIA'S CAFE</font></b></h1>
+            <div class="container">
+                <img src="pastry.jpg" alt="Pastries" width="90%" height="60%">
+                <div class="bottom-right">
+                    <p align="center" style="font-size: 40px; font-family:Bahnschrift SemiBold; color:#ae73bb;">
+                        CONFECTIONS MADE TO PERFECTION <br>
+                        INDULGE IN OUR COLLECTION OF PASTRIES
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <table align="center" width="90%" height="60%">
         <tr>
-            <td rowspan=4></td>
+            <td colspan="2">
+                <hr width="100%" size="2" color="#fe5cd2" noshade>
+                <h2 style="font-size:40px;"><i>OUR STORY:</i></h2>
+                <p style="font-size:30px;">
+                    <i>The story of Cordelia's Cafe is not just another story. It’s a true story. A story of true couverture chocolates made from true ingredients. This means, each of the ingredients is authentic and has been brought to the table after being made and approved by master chocolatiers from around the world.</i>
+                </p>
+                <ol class="upper-roman" style="font-size:30px;">
+                    <li style="font-size:30px;"><i>Naturally sourced ingredients</i></li>
+                    <li style="font-size:30px;"><i>Freshly made</i></li>
+                    <li style="font-size:30px;"><i>Delicious</i></li>
+                </ol>
+                <hr width="100%" size="2" color="#fe5cd2" noshade>
+            </td>
         </tr>
         <tr>
-            <td style="font-size: 28px; font-family:aldhabi;" align="left"><a href="cordelia's.html"><b> home</b></a></td>
-            <td align="center" style="font-size: 28px; font-family:aldhabi;"><a href="chocolates.html"> <b>chocolates</b></a></td>
-            <td align="center" style="font-size: 28px; font-family:aldhabi;"><a href="signature cakes.html"> <b>cakes</b></a></td>
-            <td align="center" style="font-size: 28px; font-family:aldhabi;"><a href="hampers.html"><b> hampers</b></a></td>
+            <td align="center">
+                <img src="signature cake.jpg" width="350" height="350">
+            </td>
+            <td align="center">
+                <img src="chocolate2.jpg" width="350" height="350">
+            </td>
+        </tr>
+        <tr style="font-size: 35px; font-family:Bahnschrift SemiBold;">
+            <td align="center">
+                <a href="signature cakes.html">Signature Cakes</a>
+            </td>
+            <td align="center">
+                <a href="chocolates.html">Chocolates</a>
+            </td> 
+        </tr>
+        <tr>
+            <td align="center">
+                <br><br>
+                <img src="celebcakes.jpg" width="350" height="350">
+            </td>
+            <td align="center">
+                <br><br>
+                <img src="hamper2.jpg" width="350" height="350">
+            </td>
+        </tr>
+        <tr style="font-size: 35px; font-family:Bahnschrift SemiBold">
+            <td align="center">
+                <a href="celebration cakes.html">Celebration Cakes</a>
+            </td>
+            <td align="center">
+                <a href="hampers.html">Hampers</a>
+            </td>
         </tr>
     </table>
-</div>
-
-<br>
-
-<div>
-    <center>
-        <h1 style="font-family:Bahnschrift SemiBold"><b>CORDELIA'S CAFE</b></h1>
-        <div class="container">
-            <img src="pastry.jpg" alt="snow" width="90%" height="60%">
-            <div class="bottom-right">
-                <p align="center" style="font-size: 40px; font-family:Bahnschrift SemiBold; color:#ae73bb;">
-                    CONFECTIONS MADE TO PERFECTION <br>
-                    INDULGE IN OUR COLLECTION OF PASTRIES
-                </p>
-            </div>
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+    
+    <table align="center" width="80%" height="40%" style="background-color:#dfc6e2; border:20px solid; font-size:30px; font-family:Aldhabi;">
+        <tr style="background-color: #fad6ed;">
+            <th>My Account</th>
+            <th>Quick Links</th>
+            <th>Discover</th>
+        </tr>
+        <tr>
+            <td><a href="myaccount.html">My Account</a></td>
+            <td>FAQs</td>
+            <td>About Us</td>
+        </tr>
+        <tr>
+            <td>Order History</td>
+            <td>Terms and Conditions</td>
+            <td>Careers</td>
+        </tr>
+        <tr>
+            <td>Delivery Information</td>
+            <td>Privacy Policy</td>
+            <td>Contact Us</td>
+        </tr>
+    </table>
+    
+    <dl>
+        <dt align="center" style="font-size:30px; font-family:Bahnschrift SemiBold;">CORDELIA'S CAFE</dt>
+        <dd align="center" style="font-size:20px; font-family:Bahnschrift SemiBold;">Don't forget to follow us on Instagram!</dd>
+    </dl>
+    
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+    
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+    
+    <a href="myaccount.html"><img src="artisnal.jpg" width="1300" height="400" align="center"></a>
+    
+    <div class="row">
+        <div class="column" style="font-size: 20px; font-family:Bahnschrift SemiBold;">
+            <h2 style="color:#ae73bb">Customer Feedback</h2>
+            <p style="color:#ae73bb">“Very good service, good menu … not overly extensive. Food was very good quality all around. They know how to prepare amazing chocolate and their pastries are top-notch. Prices were reasonable.”</p>
         </div>
-    </center>
-</div>
+        <div class="column" style="font-size: 20px; font-family:Bahnschrift SemiBold;">
+            <h2 style="color:#ae73bb"><b>Critique Feedback</b></h2>
+            <p style="color:#ae73bb"><b>Great coffee and a wide variety of cabinet food. Inside and outside seating. Great place to stop when traveling between Christchurch and Picton. Great service, friendly and engaged staff.</b></p>
+        </div>
+        <div class="column" style="font-size: 20px; font-family:Bahnschrift SemiBold;">
+            <h2 style="color:#ae73bb">General Feedback</h2>
+            <p style="color:#ae73bb">Nice cafe. Been here various times. We stop every time we drive North. Good food, nice atmosphere and on all occasions save yesterday, staff hospitality is good too. Welsh waitress there consistent - very nice and friendly every time we visit.</p>
+        </div>
+    </div>
+    
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+    
+    <div style="text-align: center;">
+        <p style="font-family:Aldhabi; font-size:25px;">Find out if a Cordelia's store is near you!</p>
+        <div class="input-group">
+            <label for="cityInput" style="font-family:Aldhabi; font-size:25px;">Enter City Name:</label>
+            <input type="text" id="cityInput" placeholder="e.g., Bangalore">
+            <button style="font-family:Aldhabi; font-size:25px;" onclick="checkCity()">Check Availability</button>
+        </div>
+        <p id="cityResult" class="result"></p>
+    </div>
 
-<table align="center" width="90%" height="60%">
-    <tr>
-        <td colspan=2>
-            <hr width="100%" size="2" color="#fe5cd2" noshade>
-            <h2 style="font-size:40px;"><i>OUR STORY:</i></h2>
-            <p style="font-size:30px;"><i>The story of Cordelia's Cafe is not just another story...</i></p>
-            <ol class="upper-roman" style="font-size:30px;">
-                <li style="font-size:30px;"><i>naturally sourced ingredients</i></li>
-                <li style="font-size:30px;"><i>freshly made</i></li>
-                <li style="font-size:30px;"><i>delicious</i></li>
-            </ol>
-            <hr width="100%" size="2" color="#fe5cd2" noshade>
-        </td>
-    </tr>
-
-    <!-- Dynamic Pastry List -->
-    <tr>
-        <td colspan=2 align="center">
-            <h2>Our Pastries</h2>
-            <?php
-            // Sample array of pastries
-            $pastries = [
-                ['name' => 'Croissant', 'price' => 2.50],
-                ['name' => 'Éclair', 'price' => 3.00],
-                ['name' => 'Macaron', 'price' => 1.50],
-                ['name' => 'Tart', 'price' => 4.00],
-                ['name' => 'Mille-feuille', 'price' => 3.50],
-            ];
-
-            echo '<ul style="font-size: 20px;">';
-            foreach ($pastries as $pastry) {
-                echo '<li>' . htmlspecialchars($pastry['name']) . ' - $' . number_format($pastry['price'], 2) . '</li>';
+    <script>
+        function checkCity() {
+            const cityInput = document.getElementById('cityInput').value.trim();
+            const cityName = cityInput.toLowerCase();
+            const availableCities = ["bangalore", "kochi", "chennai"];
+            let message;
+            if (availableCities.includes(cityName)) {
+                message = "Available in your city";
+            } else {
+                message = "Sorry, not available";
             }
-            echo '</ul>';
-            ?>
-        </td>
-    </tr>
+            const resultElement = document.getElementById('cityResult');
+            resultElement.textContent = message;
+        }
 
-    <tr>
-        <td align="center">
-            <img src="signature cake.jpg" width="350" height="350">
-        </td>
-        <td align="center">
-            <img src="chocolate2.jpg" width="350" height="350">
-        </td>
-    </tr>
+        function showDiscount() {
+            document.getElementById("discountMessage").textContent = "GHR@12, ICE87, NYT@30";
+        }
+    </script>
 
-    <tr style="font-size: 35px; font-family:Bahnschrift SemiBold;">
-        <td align="center"><a href="signature cakes.html"> Signature Cakes</a></td>
-        <td align="center"><a href="chocolates.html"> Chocolates</a></td>
-    </tr>
+    <div>
+        <ul style="font-family:Aldhabi; font-size:20px;">
+            <li>
+                <img src="icon.png" alt="Store Information No. 788, J.K. Plaza, 12th Main Rd, Indiranagar, Bengaluru, Karnataka 560038, India" class="icon">
+                Store Information No. 788, J.K. Plaza, 12th Main Rd, Indiranagar, Bengaluru, Karnataka 560038, India
+            </li>
+            <li>
+                <img src="icon.png" alt="Hours of Operation Mon.-Sun.: 11AM – 11PM" class="icon">
+                Hours of Operation Mon.-Sun.: 11AM – 11PM
+            </li>
+            <li>
+                <img src="icon.png" alt="Contact Number: xxxxxxxxxx" class="icon">
+                Contact Number: xxxxxxxxxx
+            </li>
+        </ul>
+    </div>
 
-    <!-- Remaining content -->
-    <tr>
-        <td align="center"><br><br><img src="celebcakes.jpg" width="350" height="350"></td>
-        <td align="center"><br><br><img src="hamper2.jpg" width="350" height="350"></td>
-    </tr>
-    <tr style="font-size: 35px; font-family:Bahnschrift SemiBold">
-        <td align="center"><a href="celebration cakes.html"> Celebration Cakes</a></td>
-        <td align="center"><a href="hampers.html"> Hampers</a></td>
-    </tr>
-</table>
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+    
+    <div>
+        <p id="demo" style="color:black; font-family:Aldhabi; font-size:25px;">Wanna get discount on your favorite items!?</p>
+        <button style="font-family:Aldhabi; font-size:25px;" type="button" onclick="myFunction()">Click Me!</button>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Use code: GHR@12, ICE87, NYT@30";
+            }
+        </script>
+    </div>
 
-<hr width="100%" size="2" color="#fe5cd2" noshade>
-<!-- Continue with the rest of your HTML as is -->
+    <br>
+    <p style="font-family:Aldhabi; font-size:25px; align:center;">Click the button to display the special offer for today.</p>
+    <button onclick="showOffer()">Try it</button>
+    <p id="offer" style="font-family:Aldhabi; font-size:25px; align:center;"></p>
+
+    <script>
+        function showOffer() {
+            var offer;
+            var dayName;
+            switch (new Date().getDay()) {
+                case 0: dayName = "Sunday"; offer = "20% off on all items!"; break;
+                case 1: dayName = "Monday"; offer = "Buy one get one free on selected items!"; break;
+                case 2: dayName = "Tuesday"; offer = "15% off on hampers!"; break;
+                case 3: dayName = "Wednesday"; offer = "Free delivery on orders over 500!"; break;
+                case 4: dayName = "Thursday"; offer = "10% off on all chocolates"; break;
+                case 5: dayName = "Friday"; offer = "Special weekend deals starting now!"; break;
+                case 6: dayName = "Saturday"; offer = "25% off on cakes"; break;
+                default: dayName = "Unknown Day"; offer = "No special offers today.";
+            }
+            document.getElementById("offer").innerHTML = "Today is " + dayName + ". Special Offer: " + offer;
+        }
+    </script>
+
+    <hr width="100%" size="2" color="#fe5cd2" noshade>
+</body>
+</html>

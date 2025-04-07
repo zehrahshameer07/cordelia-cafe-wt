@@ -1,0 +1,12 @@
+<html>
+<title>signature cakes </title>
+<body bgcolor="turquoise" text="white">
+<H1><b><u>SIGNATURE CAKES</b></u></H1>
+<center>
+<img src="signature cakes.jpg" width="500" height="250" >
+</center>
+<br> </br>
+<li><b>Different flavours of cakes to choose from</b></li>
+<a href="cordelia's.html"> home</a>
+</body>
+</html>
